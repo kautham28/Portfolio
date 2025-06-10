@@ -923,12 +923,14 @@
     <section id="contact" class="contact">
         <div class="container">
             <h2>Contact</h2>
-            <form action="mailto:kauthamanthayaparan@gmail.com" method="post" enctype="text/plain">
+            <!-- Updated form to use Formspree with your real endpoint -->
+            <form action="https://formspree.io/f/mblygqlv" method="POST">
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
                 <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
                 <button type="submit">Send Message</button>
             </form>
+            <div class="note">Your message will be sent directly to thayaparankauthaman@gmail.com</div>
         </div>
     </section>
 
