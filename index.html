@@ -535,35 +535,51 @@
 
         @media (max-width: 480px) {
             .hero {
-                padding: 80px 15px 30px;
+                flex-direction: column;
+                padding: 60px 8px 20px;
             }
-
-            .container {
-                padding: 0 15px;
+            .hero-content {
+                grid-template-columns: 1fr !important;
+                gap: 20px !important;
+                text-align: center;
+                justify-items: center;
+                align-items: center;
             }
-
-            .hero h1 {
-                font-size: 1.8em;
+            .hero-image {
+                width: 160px !important;
+                height: 160px !important;
+                margin: 0 auto 12px auto;
+                border-radius: 50%;
+                box-shadow: 0 8px 20px rgba(0,0,0,0.25);
             }
-
-            .contact-info {
-                gap: 8px;
+            .hero-image img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 50%;
             }
-
-            .contact-info p {
-                font-size: 0.9em;
+            .hero-text {
+                padding-left: 0 !important;
+                padding-right: 0 !important;
             }
-
-            .card {
-                height: 280px;
+            .hero-text h1,
+            .hero-text h2,
+            .hero-text h3 {
+                text-align: center;
             }
-
-            .card-content {
-                padding: 15px 20px 20px;
+            .contact-info[style] {
+                flex-direction: column !important;
+                gap: 10px !important;
+                align-items: center !important;
+                margin-bottom: 18px !important;
             }
-
-            .slideshow-container {
-                height: 200px;
+            .contact-info span {
+                margin-right: 0 !important;
+            }
+            .hero .btn {
+                width: 100%;
+                padding: 12px 0;
+                font-size: 1em;
             }
         }
 
