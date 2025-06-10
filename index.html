@@ -783,7 +783,7 @@
                     <p>Presented a startup idea with a strong market strategy.</p>
                 </div>
                 <div class="card">
-                    <h3>Finova Hack创新创业 2023 - Finalist</h3>
+                    <h3>Finova Hack 2023 - Finalist</h3>
                     <p>Designed a fintech solution for real-world financial challenges.</p>
                 </div>
                 <div class="card">
@@ -993,6 +993,15 @@
 
         // Start slideshow when page loads
         window.addEventListener('load', startSlideshow);
+    </script>
+    <script>
+        // Open Teratitans.mov when any achievement card is clicked
+        document.querySelectorAll('#achievements .card').forEach(card => {
+            card.style.cursor = 'pointer';
+            card.addEventListener('click', function() {
+                window.open('assets/Teratitans.mov', '_blank');
+            });
+        });
     </script>
 </body>
 </html>
